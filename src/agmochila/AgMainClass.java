@@ -24,10 +24,11 @@ public class AgMainClass {
         itens.add(new Item("Notebook",8,100));
         itens.add(new Item("Caneta",1,2));
         itens.add(new Item("Lapis",1,1));
-        itens.add(new Item("Celular",5,50));
+        itens.add(new Item("Celular",2,50));
         itens.add(new Item("Livro",4,60));
-        itens.add(new Item("Caderno",2,15));
+        itens.add(new Item("Caderno",3,15));
         itens.add(new Item("Casaco",3,40));
+        itens.add(new Item("Carteira",2,60));
         //-----------------------Parametros-------------------------------------
         int taxaMutacao = 5;
         int PesoMaximo = 22;//em kilos
@@ -56,8 +57,8 @@ public class AgMainClass {
             System.out.println("---------------Geracao:"+p.getGeracao()+"-------------------");
             System.out.println(p.mostraPopulacao());
             
-        //}while(Avaliacao.continuar(15, p.getGeracao()));//opcao 1 stagnacao
-        }while(Avaliacao.qualidadeDesejada(250));//opcao 2 qualidade minima da solucao
+        }while(Avaliacao.continuar(450, p.getGeracao()));//opcao 1 stagnacao (melhor possivel parece ser 370)
+        //}while(Avaliacao.qualidadeDesejada(350));//opcao 2 qualidade minima da solucao
         
         //-------------------Solucao AG-----------------------------------------
         System.out.println("-----------------------Resultado--------------------");    
