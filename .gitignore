@@ -1,0 +1,5 @@
+# Dont track content of these folds
+ build/
+
+# Compiled source
+*.class
